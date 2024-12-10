@@ -7,4 +7,8 @@ export default defineConfig({
   css: {
     postcss: './tailwind.config.js',
   },
+  build: {
+    chunkSizeWarningLimit: 10000 // Increase the limit to 1 MB (1000 KB)
+  }
+
 })
